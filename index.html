@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labirinto</title>
+    <link rel="stylesheet" href="maze.css"></head>
+<body>
+    <div class="links-container">
+        <a class="link-outro-site" href="https://github.com/Barboss4/">Veja meu github</a>
+        <a class="link-outro-site" href="https://barboss4.github.io/pickabuton/">Pick a button</a>
+        <a class="link-outro-site" href="https://barboss4.github.io/Caracol/">Cara ou Coroa</a>
+    </div>
+
+    <h1>Jogo do Labirinto</h1>
+    <h2 id="h2">Regras do Jogo:</h2>
+    <h3 id="h3">Pegue um lápis e papel, pois o labirinto é invisível. Desenhe os caminhos que você já percorreu para ajudar a encontrar a saída.</h3>
+    <div class="controls">
+        <label id="cellSizeLabel" for="cellSizeRange">Tamanho da Célula:</label>
+        <input type="range" id="cellSizeRange" min="20" max="100" value="50" step="10">
+        <span id="cellSizeValue">25</span>
+        <button id="startButton">Iniciar</button>
+    </div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id="message"></div>
+    <script src="maze.js"></script>
+</body>
+</html>
+
+
